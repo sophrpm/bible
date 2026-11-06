@@ -1,0 +1,168 @@
+/* Responsive styles. */
+@media (min-width: 1600px) {
+  .verse-list {
+    height: 550px;
+  }
+  .reference-list {
+    height: 415px;
+  }
+}
+@media (max-width: 1100px) {
+  .topbar {
+    gap: 24px;
+  }
+  .topbar nav {
+    gap: 12px;
+  }
+  .topbar nav button {
+    font-size: 10px;
+  }
+  .header-tools {
+    gap: 9px;
+  }
+  .subtle {
+    display: none;
+  }
+  .legend {
+    gap: 10px;
+  }
+  .map-stats {
+    font-size: 9px;
+  }
+  .study-grid {
+    grid-template-columns: minmax(0, 1.4fr) minmax(280px, 1fr);
+  }
+  .reader {
+    padding: 25px 20px 0;
+  }
+  .intro h1 {
+    font-size: 29px;
+  }
+  .search-launch {
+    width: 290px;
+  }
+  .topbar .brand {
+    font-size: 25px;
+  }
+  .import-button {
+    font-size: 10px;
+    padding: 8px;
+  }
+  .topbar nav button svg {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  .topbar {
+    height: auto;
+    min-height: 76px;
+    flex-wrap: wrap;
+    padding: 16px 5%;
+    gap: 15px;
+  }
+  .topbar nav {
+    order: 3;
+    width: 100%;
+    height: 30px;
+    justify-content: center;
+    gap: 30px;
+  }
+  .header-tools {
+    gap: 8px;
+  }
+  .brand {
+    font-size: 24px;
+  }
+  .import-button {
+    font-size: 0;
+  }
+  .import-button svg {
+    width: 18px;
+  }
+  .intro {
+    padding-top: 28px;
+    display: block;
+  }
+  .intro h1 {
+    font-size: 28px;
+  }
+  .search-launch {
+    margin-top: 22px;
+    width: 100%;
+  }
+  main {
+    padding: 0 4%;
+  }
+  .map-top {
+    padding: 16px 12px;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .map-top > div {
+    font-size: 10px;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .map-stats span:first-child,
+  .map-stats .stat-divider,
+  .live-badge {
+    display: none;
+  }
+  .legend {
+    gap: 8px 12px;
+  }
+  .legend span {
+    font-size: 7px;
+  }
+  .map-bottom {
+    padding: 12px;
+  }
+  .study-toolbar {
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 14px;
+  }
+  .passage-controls,
+  .version-controls {
+    gap: 7px;
+  }
+  .study-toolbar select {
+    max-width: 180px;
+    font-size: 11px;
+  }
+  .study-grid {
+    grid-template-columns: 1fr;
+  }
+  .references {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+  .verse-list {
+    height: 480px;
+  }
+  .reference-list {
+    height: 330px;
+  }
+  .reader {
+    padding: 24px 17px 0;
+  }
+  footer {
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+  .footer-brand {
+    width: 100%;
+  }
+  .search-modal {
+    padding: 20px;
+  }
+  .search-modal h2 {
+    font-size: 22px;
+  }
+  .search-filters {
+    flex-wrap: wrap;
+  }
+  .search-filters select {
+    width: 45%;
+  }
+}

@@ -1,0 +1,13 @@
+/* Themes styles. */
+[data-theme='dark'] {
+  --bg: #151a17;
+  --panel: #1d231f;
+  --ink: #e4e4d8;
+  --muted: #979d91;
+  --line: #323b31;
+  --gold: #d0b176;
+  --wash: #2b2c22;
+  --selected: #333124;
+  color: var(--ink);
+  background: var(--bg);
+}

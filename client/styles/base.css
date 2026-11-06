@@ -1,0 +1,87 @@
+/* Base styles. */
+:root {
+  font-family: 'DM Sans', Arial, sans-serif;
+  color: #35382e;
+  background: #f7f7f2;
+  font-synthesis: none;
+  --bg: #f7f7f2;
+  --panel: #fff;
+  --ink: #35382e;
+  --muted: #898b7e;
+  --line: #e8e8df;
+  --gold: #a38343;
+  --wash: #f7f3e8;
+  --selected: #f7f3e8;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+button,
+select {
+  cursor: pointer;
+}
+button {
+  color: inherit;
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 9px 12px;
+  transition: background 0.15s;
+}
+button:hover {
+  background: var(--wash);
+}
+button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+button:focus-visible,
+a:focus-visible,
+select:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+button svg {
+  flex-shrink: 0;
+}
+select,
+input,
+textarea {
+  color: var(--ink);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 9px;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+h1,
+h2,
+.brand,
+.footer-brand {
+  font-family: 'Lora', Georgia, serif;
+}
+h2 {
+  font-size: 27px;
+  font-weight: 500;
+  margin: 10px 0 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}

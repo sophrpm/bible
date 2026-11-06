@@ -1,0 +1,216 @@
+/* Verse addresses and explicit bookmark actions. */
+.verse-reference {
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 13px;
+}
+.verse-reference .verse-address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  font:
+    600 17px Georgia,
+    serif;
+  color: var(--gold);
+  border: 0;
+  padding: 6px 2px;
+  text-align: left;
+}
+.verse-address small {
+  font:
+    9px Arial,
+    sans-serif;
+  color: var(--muted);
+}
+.verse-reference .save-verse {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font:
+    11px Arial,
+    sans-serif;
+  color: var(--gold);
+  border: 1px solid var(--line);
+  padding: 8px 11px;
+  flex-shrink: 0;
+  background: var(--panel);
+}
+.verse-reference .save-verse.saved {
+  background: var(--wash);
+  border-color: var(--gold);
+}
+.reader-mode-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 24px 0 12px;
+}
+.reader-mode-switch button {
+  font-size: 12px;
+  background: var(--panel);
+  padding: 11px 16px;
+}
+.reader-mode-switch [aria-pressed='true'] {
+  color: var(--gold);
+  background: var(--wash);
+  border-color: var(--gold);
+}
+.independent-study {
+  grid-template-columns: minmax(0, 2.5fr) minmax(270px, 1fr);
+  border-radius: 8px;
+  border-top: 1px solid var(--line);
+}
+.independent-readers {
+  min-width: 0;
+  padding: 16px;
+  background: var(--bg);
+}
+.independent-readers-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+.independent-readers-toolbar strong {
+  display: block;
+  font-size: 13px;
+}
+.independent-readers-toolbar span {
+  display: block;
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 6px;
+  line-height: 1.6;
+}
+.independent-readers-toolbar > button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  color: var(--gold);
+  flex-shrink: 0;
+}
+.independent-readers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  align-items: start;
+}
+.independent-panel {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+}
+.independent-panel.active-panel {
+  border-color: var(--gold);
+}
+.independent-panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--line);
+}
+.independent-panel-heading > button:first-child {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 0;
+  font-size: 12px;
+  color: var(--gold);
+  padding: 4px;
+}
+.independent-panel-heading small {
+  font-size: 8px;
+  color: var(--muted);
+}
+.independent-panel-heading > button:last-child {
+  padding: 4px;
+  border: 0;
+  display: grid;
+  place-items: center;
+}
+.independent-panel-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 10px;
+  border-bottom: 1px solid var(--line);
+  position: relative;
+  z-index: 4;
+}
+.independent-panel-controls .select-trigger {
+  font-size: 10px;
+  padding: 7px 8px;
+  max-width: 180px;
+}
+.independent-panel .reader {
+  padding: 16px 10px 0;
+}
+.independent-panel .reader h2 {
+  font-size: 23px;
+}
+.independent-panel .comparison-list {
+  height: 430px;
+  margin-top: 12px;
+  overflow-anchor: none;
+}
+.comparison-list {
+  overflow-anchor: none;
+  scroll-behavior: auto;
+}
+.independent-panel .translation-text {
+  font-size: 15px;
+}
+.independent-panel .reader-foot {
+  font-size: 8px;
+  line-height: 1.7;
+}
+.active-verse-caption {
+  font:
+    12px Arial,
+    sans-serif;
+  fill: #f4cb70;
+}
+.reference-arc.active-connection {
+  filter: drop-shadow(0 0 2px #f0be5260);
+}
+@media (max-width: 1100px) {
+  .independent-study {
+    grid-template-columns: 1fr;
+  }
+  .independent-study > .references {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+}
+@media (max-width: 650px) {
+  .independent-readers-grid {
+    grid-template-columns: 1fr;
+  }
+  .independent-readers-toolbar {
+    align-items: flex-start;
+  }
+  .independent-readers-toolbar > button {
+    font-size: 10px;
+  }
+  .independent-readers {
+    padding: 10px;
+  }
+  .verse-reference .verse-address {
+    font-size: 17px;
+  }
+  .verse-reference .save-verse {
+    font-size: 10px;
+    padding: 7px;
+  }
+  .reader-mode-switch button {
+    font-size: 11px;
+    padding: 9px 10px;
+  }
+}

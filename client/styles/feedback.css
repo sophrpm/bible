@@ -1,0 +1,57 @@
+/* Feedback styles. */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+  font-size: 8px;
+  color: var(--muted);
+}
+.footer-brand {
+  font-size: 18px;
+  color: var(--gold);
+}
+.footer-brand span {
+  font:
+    9px 'DM Sans',
+    sans-serif;
+  color: var(--muted);
+  margin-left: 12px;
+}
+.credits {
+  font-size: 10px;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+.notice {
+  padding: 13px 18px;
+  border: 1px solid #d6c296;
+  background: var(--wash);
+  font-size: 12px;
+  margin-top: 20px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.notice button {
+  border: 0;
+  padding: 2px;
+}
+.saved-panel {
+  padding: 20px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  margin-top: 20px;
+  border-radius: 8px;
+}
+.saved-panel h3 {
+  font-size: 15px;
+}
+.saved-panel button {
+  margin: 4px;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 11px;
+}

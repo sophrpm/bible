@@ -1,0 +1,373 @@
+/* Visualizations styles. */
+.graph-viewport {
+  position: relative;
+  background: var(--chart-bg);
+  color: var(--chart-ink);
+  isolation: isolate;
+}
+.graph-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 7px;
+  padding: 10px 16px;
+  border-top: 1px solid var(--chart-line);
+  border-bottom: 1px solid var(--chart-line);
+}
+.graph-controls button {
+  display: grid;
+  place-items: center;
+  padding: 7px;
+  color: #cfbc90;
+  border: 1px solid var(--chart-line);
+  background: #232b24;
+}
+.graph-controls button:hover {
+  background: #374033;
+}
+.graph-controls output {
+  min-width: 43px;
+  text-align: center;
+  font-size: 10px;
+  color: var(--chart-muted);
+}
+.graph-instruction {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 9px;
+  color: var(--chart-muted);
+}
+.graph-viewport > svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 260px;
+  max-height: 70vh;
+  touch-action: pan-y;
+  user-select: none;
+  overflow: hidden;
+  cursor: grab;
+}
+.graph-viewport > svg.dragging {
+  cursor: grabbing;
+  touch-action: none;
+}
+.chart-heading {
+  font:
+    20px Georgia,
+    serif;
+  fill: #dbca9f;
+}
+.chart-subtitle {
+  font:
+    11px Arial,
+    sans-serif;
+  fill: var(--chart-muted);
+}
+.chart-label {
+  font:
+    10px Arial,
+    sans-serif;
+  fill: var(--chart-muted);
+}
+.thread-label {
+  font:
+    8px Arial,
+    sans-serif;
+  fill: var(--chart-muted);
+}
+.sphere-label {
+  font:
+    10px Arial,
+    sans-serif;
+  fill: var(--chart-ink);
+}
+.node-title {
+  font:
+    12px Georgia,
+    serif;
+  fill: var(--chart-ink);
+}
+.chart-node {
+  fill: var(--chart-node);
+  stroke: var(--chart-line);
+}
+.sphere-outline {
+  fill: none;
+  stroke: var(--chart-line);
+  stroke-dasharray: 4 6;
+}
+.matrix-line {
+  stroke: var(--chart-line);
+  stroke-width: 0.4;
+}
+.reference-arc {
+  cursor: pointer;
+  pointer-events: stroke;
+}
+.reference-arc:hover {
+  stroke: #f1d69a !important;
+  opacity: 1 !important;
+  stroke-width: 3px !important;
+}
+.visual-target {
+  cursor: pointer;
+  outline: none;
+}
+.visual-target:focus .chart-node,
+.visual-target:hover .chart-node {
+  stroke: #d4b577;
+}
+.visual-target:focus rect,
+.visual-target:focus circle,
+.visual-target:hover circle {
+  stroke: #fff0c0;
+  stroke-width: 2;
+}
+.graph-fullscreen {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  border: 0 !important;
+}
+.graph-fullscreen .graph-controls {
+  padding: 16px 22px;
+}
+.graph-fullscreen > svg {
+  flex: 1;
+  height: 0;
+  max-height: none;
+  min-height: 0;
+  touch-action: none;
+}
+.graph-tooltip {
+  position: absolute;
+  right: 20px;
+  top: 67px;
+  width: 310px;
+  max-width: calc(100% - 40px);
+  background: var(--panel);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  padding: 14px;
+  box-shadow: 0 12px 45px #0005;
+  z-index: 6;
+}
+.tooltip-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 11px;
+  margin-bottom: 4px;
+  font-size: 9px;
+  color: var(--gold);
+  letter-spacing: 1px;
+}
+.tooltip-heading b {
+  font-size: 9px;
+  letter-spacing: 0;
+  background: var(--wash);
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+.graph-tooltip > button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: 0;
+  padding: 10px 5px;
+  border-radius: 6px;
+}
+.tooltip-verse-title {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+.tooltip-verse-title strong {
+  font-family: Georgia, serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.tooltip-verse-title small {
+  color: var(--gold);
+  font-size: 8px;
+}
+.graph-tooltip p {
+  font:
+    12px/1.75 Georgia,
+    serif;
+  margin: 8px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.graph-tooltip button > span {
+  font-size: 9px;
+  color: var(--muted);
+}
+.tooltip-footer,
+.tooltip-range {
+  display: block;
+  border-top: 1px solid var(--line);
+  font-size: 9px;
+  line-height: 1.7;
+  color: var(--muted);
+  padding-top: 10px;
+}
+.tooltip-range {
+  border: 0;
+  padding: 0 5px 10px;
+}
+.explorer-page {
+  margin-top: 35px;
+}
+.explorer-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.explorer-heading h1 {
+  margin-top: 12px;
+}
+.explorer-heading p {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+.explorer-focus {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  border-radius: 8px;
+  padding: 15px 23px;
+  min-width: 175px;
+}
+.explorer-focus small {
+  font-size: 8px;
+  letter-spacing: 1.3px;
+  color: var(--muted);
+}
+.explorer-focus b {
+  font:
+    21px Georgia,
+    serif;
+  color: var(--gold);
+}
+.visual-mode-tabs {
+  display: flex;
+  gap: 7px;
+  padding: 7px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  margin-top: 19px;
+  flex-wrap: wrap;
+}
+.visual-mode-tabs button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: 1px solid transparent;
+  flex: 1;
+  font-size: 12px;
+  padding: 12px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.visual-mode-tabs [aria-selected='true'] {
+  color: var(--gold);
+  background: var(--wash);
+  border-color: var(--line);
+}
+.explorer-filters {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 18px 0;
+}
+.explorer-filters > label {
+  font-size: 11px;
+  color: var(--muted);
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+.explorer-filters input {
+  width: 70px;
+  font-size: 11px;
+}
+.explorer-filters > span {
+  margin-left: auto;
+  font-size: 10px;
+  color: var(--muted);
+}
+.visual-panel {
+  border: 1px solid var(--chart-line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.visual-panel .graph-controls {
+  border-top: 0;
+}
+.explorer-foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  font-size: 9px;
+  color: var(--muted);
+  padding: 16px 3px;
+  line-height: 1.8;
+}
+.sphere-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background: var(--panel);
+  padding: 16px;
+  border-top: 1px solid var(--line);
+}
+.sphere-controls label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.sphere-controls input {
+  accent-color: var(--gold);
+  width: 140px;
+}
+.sphere-controls output {
+  min-width: 35px;
+  font-size: 10px;
+}
+.sphere-controls button {
+  font-size: 10px;
+}
+.empty-visual {
+  font-size: 12px;
+  color: var(--muted);
+  padding: 20px;
+  text-align: center;
+}
+.canvas-edges-layer {
+  overflow: visible;
+}
+.canvas-edges-layer canvas:focus-visible {
+  outline: 2px solid #d2b272;
+  outline-offset: -3px;
+}

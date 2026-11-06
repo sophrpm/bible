@@ -1,0 +1,127 @@
+/* References styles. */
+.references {
+  border-left: 1px solid var(--line);
+  background: color-mix(in srgb, var(--bg) 50%, var(--panel));
+  padding: 29px 24px 18px;
+}
+.ref-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.ref-title h2 {
+  font-size: 25px;
+}
+.badge {
+  color: var(--gold);
+  background: var(--wash);
+  border: 1px solid #d7c99f;
+  font-size: 10px;
+  padding: 3px 7px;
+  border-radius: 5px;
+  margin-top: 8px;
+}
+.muted {
+  color: var(--muted);
+  font-size: 11px;
+}
+.references > .muted {
+  margin: 10px 0 19px;
+}
+.direction {
+  display: flex;
+  background: var(--bg);
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  gap: 3px;
+}
+.direction button {
+  flex: 1;
+  font-size: 10px;
+  padding: 7px 4px;
+  border-color: transparent;
+  color: var(--muted);
+}
+.direction .active {
+  background: var(--panel);
+  color: var(--gold);
+  box-shadow: 0 1px 4px #00000009;
+  border-color: var(--line);
+}
+.vote-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 9px;
+  color: var(--muted);
+  padding: 10px 0;
+}
+.vote-filter input {
+  width: 65px;
+  font-size: 10px;
+  padding: 4px 6px;
+}
+.reference-list {
+  height: 333px;
+  overflow-y: auto;
+  padding-right: 6px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+}
+.reference-card {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 14px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  margin-bottom: 9px;
+}
+.reference-card > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+  align-items: center;
+}
+.reference-card b {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--gold);
+}
+.reference-card span {
+  font-size: 9px;
+  color: var(--muted);
+}
+.reference-card p {
+  font:
+    12px/1.8 'Lora',
+    Georgia,
+    serif;
+  color: var(--ink);
+  margin: 8px 0 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.note-label {
+  display: block;
+  font-size: 8px;
+  color: var(--gold);
+  letter-spacing: 1px;
+  margin-top: 17px;
+}
+.note-label textarea {
+  display: block;
+  width: 100%;
+  height: 66px;
+  resize: vertical;
+  margin: 8px 0;
+  font-size: 11px;
+  padding: 10px;
+}
+.references small {
+  font-size: 8px;
+}

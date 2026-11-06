@@ -1,0 +1,170 @@
+/* Responsive Atlas styles. */
+@media (max-width: 1050px) {
+  .study-toolbar {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .study-grid.comparing {
+    grid-template-columns: 1fr;
+  }
+  .comparing .references {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+  .comparing .reference-list {
+    height: 300px;
+  }
+  .graph-tooltip {
+    width: 275px;
+    right: 12px;
+    top: 62px;
+  }
+  .visual-mode-tabs button {
+    font-size: 10px;
+    gap: 6px;
+  }
+  .graph-instruction {
+    max-width: 210px;
+    font-size: 8px;
+  }
+  .comparison-popover {
+    right: 0;
+  }
+  .study-toolbar .select-trigger {
+    font-size: 11px;
+  }
+}
+@media (max-width: 600px) {
+  .study-toolbar {
+    display: block;
+  }
+  .study-toolbar .version-controls {
+    margin-top: 12px;
+  }
+  .select-trigger {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+  .comparison-popover {
+    right: auto;
+    left: 0;
+    width: 300px;
+    max-width: calc(100vw - 55px);
+  }
+  .version-controls .comparison-popover {
+    left: auto;
+    right: 0;
+  }
+  .study-toolbar .passage-controls {
+    gap: 10px;
+  }
+  .study-toolbar .version-controls {
+    gap: 8px;
+  }
+  .translation-grid {
+    gap: 8px;
+  }
+  .translation-cell {
+    padding: 10px;
+  }
+  .translation-text {
+    font-size: 13px;
+    line-height: 1.9;
+  }
+  .translation-name {
+    font-size: 8px;
+  }
+  .comparing .reader {
+    padding: 24px 12px 0;
+  }
+  .graph-controls {
+    gap: 4px;
+    padding: 8px;
+  }
+  .graph-controls button {
+    padding: 6px;
+  }
+  .graph-instruction {
+    max-width: 115px;
+    line-height: 1.7;
+  }
+  .graph-instruction svg {
+    display: none;
+  }
+  .graph-viewport > svg {
+    min-height: 230px;
+  }
+  .graph-tooltip {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 0 10px 12px;
+    width: auto;
+    max-width: none;
+  }
+  .graph-fullscreen .graph-tooltip {
+    max-height: 42vh;
+    overflow: auto;
+    flex-shrink: 0;
+  }
+  .explorer-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .explorer-focus {
+    padding: 10px 15px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .explorer-heading h1 {
+    font-size: 27px;
+  }
+  .visual-mode-tabs button {
+    flex-basis: 28%;
+    font-size: 11px;
+  }
+  .explorer-filters {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .explorer-filters > span {
+    margin-left: 0;
+    width: 100%;
+    font-size: 9px;
+  }
+  .explorer-foot {
+    display: block;
+  }
+  .explorer-foot span {
+    display: block;
+    margin-bottom: 8px;
+  }
+  .sphere-controls {
+    gap: 14px;
+    justify-content: flex-start;
+  }
+  .sphere-controls label {
+    font-size: 10px;
+  }
+  .sphere-controls input {
+    width: 110px;
+  }
+  .comparison-verse {
+    padding: 6px 4px 10px;
+  }
+  .verse-reference > button:last-child {
+    font-size: 8px;
+  }
+  .graph-fullscreen > svg {
+    min-height: 150px;
+  }
+}
+.tooltip-heading > button {
+  display: grid;
+  place-items: center;
+  padding: 3px;
+  border: 0;
+  color: var(--muted);
+}

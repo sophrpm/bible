@@ -1,0 +1,88 @@
+/* Overview styles. */
+.map-card {
+  background: #191e1c;
+  color: #eeeee3;
+  border-radius: 11px;
+  overflow: hidden;
+  border: 1px solid #30362f;
+  box-shadow: 0 6px 18px #25281b08;
+}
+.map-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 23px;
+  font-size: 11px;
+}
+.map-top > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.gold-dot {
+  width: 6px;
+  height: 6px;
+  background: #c9ad73;
+  border-radius: 50%;
+}
+.map-top b {
+  font-weight: 500;
+}
+.subtle {
+  color: #858b83;
+  font-size: 10px;
+  margin-left: 4px;
+}
+.map-stats {
+  color: #959c92;
+  font-size: 10px;
+}
+.map-stats b {
+  color: #dddccd;
+}
+.stat-divider {
+  height: 13px;
+  width: 1px;
+  background: #454a40;
+  margin: 0 5px;
+}
+.live-badge {
+  font-size: 8px;
+  letter-spacing: 1px;
+  color: #bba578;
+  border: 1px solid #484634;
+  border-radius: 4px;
+  padding: 5px 8px;
+  margin-left: 10px;
+}
+.map-bottom {
+  border-top: 1px solid #32382e;
+  padding: 13px 22px;
+}
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+  flex-wrap: wrap;
+}
+.legend span {
+  font-size: 8px;
+  color: #a7ad9f;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.legend i {
+  width: 10px;
+  height: 3px;
+  display: inline-block;
+  border-radius: 4px;
+}
+.map-limit {
+  display: block;
+  text-align: center;
+  font-size: 8px;
+  color: #737c70;
+  margin-top: 9px;
+}
